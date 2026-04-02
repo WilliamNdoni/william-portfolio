@@ -3,6 +3,7 @@ import TypewriterText from "./components/typing_animation";
 import { BarChart2, Database, Code2, Trophy } from "lucide-react";
 import TechStack from "./components/carousel_tech";
 import FeaturedWorks from "./components/carousel_works";
+import Contact from "./components/emailjs"
 
 const stats = [
   { icon: <Trophy size={55} />, value: "3+", label: "Years Experience" },
@@ -15,10 +16,10 @@ const App = () => {
   return (
     <main className="flex flex-col justify-center pt-20 px-20 py-20 gap-10 items-center">
       <div className="div-shadow">
-        <div className="w-1/2 justify-center">
+        <div className="w-2/3 justify-center">
         <TypewriterText />
         </div>
-        <div className="w-1/2 justify-centre flex">
+        <div className="w-1/3 justify-centre flex">
           <img src="/WP_icon.png" alt="profile picture" 
           className="rounded-full border-4 border-purple-900 w-80 h-80 object-cover"/>
         </div>
@@ -93,7 +94,11 @@ const App = () => {
 
        </div>
 
+        </div>
 
+        <div className="div-shadow flex flex-col">
+          <h2 className="text-center">Get In Touch</h2>
+          <Contact />
         </div>
   
     </main>
