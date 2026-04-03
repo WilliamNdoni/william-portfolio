@@ -43,7 +43,7 @@
     line-height: 1.6;
   }
   .div-shadow {
-    @apply flex justify-center w-full px-10 gap-10 shadow-2xl rounded-2xl py-10;
+    @apply flex justify-center w-full px-4 md:px-10 gap-6 md:gap-10 shadow-2xl rounded-2xl py-8 md:py-10;
   }
 }
 
@@ -62,5 +62,15 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+  .mobile-scrollbar::-webkit-scrollbar {
+    height: 4px;
+  }
+  .mobile-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .mobile-scrollbar::-webkit-scrollbar-thumb {
+    background: #581c87;
+    border-radius: 999px;
   }
 }

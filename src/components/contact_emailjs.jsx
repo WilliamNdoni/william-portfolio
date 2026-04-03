@@ -1,6 +1,10 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
+const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const public_key = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 const Contact = () => {
   const formRef = useRef(null);
   const [sent, setSent] = useState(false);
@@ -11,10 +15,10 @@ const Contact = () => {
     setLoading(true);
 
     emailjs.sendForm(
-      "service_3ws8usa",
-      "template_6z57dhd",
+      service_id,
+      template_id,
       formRef.current,
-      "89xqLbFN_X5n3M-hB"
+      public_key
     ).then(() => {
       setSent(true);
       setLoading(false);
@@ -70,6 +74,7 @@ const Contact = () => {
           </button>
         </form>
       )}
+      
     </>
   );
 };
