@@ -42,7 +42,7 @@ const projects = [
     description: "An automated dispensing system that manages milk vending, tracks sales, and monitors inventory in real time.",
     tags: ["C++", "Node.js", "MySQL"],
     image: "/projects/milk-atm.jpg",
-    github: "https://github.com/kenkomu/milkATM",
+    github: "https://github.com/WilliamNdoni/darajaAPI_callback",
   },
   {
     title: "Technician KPI Dashboard",
