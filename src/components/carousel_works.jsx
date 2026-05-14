@@ -3,6 +3,13 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "E-commerce Platform",
+    description: "E-commerce platform with M-Pesa payments, SMS notifications, and affiliate tracking.",
+    tags: ["React", "Node.js", "PostgreSQL", "Prisma", "M-Pesa", "Africa's Talking"],
+    image: "/projects/e-commerce.jpg",
+    github: null,
+  },
+  {
     title: "Data Pipeline",
     description: "Automated ETL pipeline using Airflow and Airbyte to sync data into PostgreSQL.",
     tags: ["Airflow", "Airbyte", "PostgreSQL"],
@@ -10,11 +17,18 @@ const projects = [
     github: "https://github.com/WilliamNdoni/Data-Engineering-Tutorial",
   },
   {
+  title: "Client management portal",
+  description: "Gym trainer portal with role-based access, M-Pesa payments, and automated email alerts.",
+  tags: ["React", "Node.js", "PostgreSQL", "M-Pesa", "Nodemailer"],
+  image: "/projects/G7_logo.jpeg",
+  github: null,
+  },
+  {
     title: "Swahili ASR Model",
     description: "A deep learning model that transcribes spoken Swahili into text, trained to handle diverse accents and dialects.",
     tags: ["PyTorch", "HuggingFace", "LLM"],
     image: "/projects/ASR.jpg",
-    github: "https://github.com/WilliamNdoni/SWAHILI_ASR",
+    github: null,
   },
   {
     title: "Customer Analytics",
@@ -95,10 +109,10 @@ const FeaturedWorks = () => {
         {doubled.map((project, i) => (
           <div
             key={i}
-            className="min-w-[220px] max-w-[220px] md:min-w-[300px] md:max-w-[300px] rounded-2xl border border-white/10 bg-white/5 hover:border-purple-900 transition-all duration-300 overflow-hidden"
+            className="min-w-55 max-w-55 md:min-w-75 md:max-w-75 rounded-2xl border border-white/10 bg-white/5 hover:border-purple-900 transition-all duration-300 overflow-hidden"
           >
             {/* Image */}
-            <div className="w-full h-[120px] md:h-[180px] bg-white/10 overflow-hidden">
+            <div className="w-full h-30 md:h-45 bg-white/10 overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
