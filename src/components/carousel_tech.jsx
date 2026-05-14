@@ -83,9 +83,9 @@ const TechStack = () => {
         {doubled.map((icon, i) => (
           <div
             key={i}
-            className="flex flex-col items-center gap-2 min-w-[100px]"
+            className="flex flex-col items-center gap-2 min-w-25"
           >
-            <div className="w-[100px] h-[100px] p-3 rounded-xl bg-white/5 border border-white/10 hover:border-purple-900 transition-all duration-300 hover:scale-110 pulse-scale">
+            <div className="w-25 h-25 p-3 rounded-xl bg-white/5 border border-white/10 hover:border-purple-900 transition-all duration-300 hover:scale-110 pulse-scale">
               <img
                 src={`/icons/${icon.file}`}
                 alt={icon.name}
